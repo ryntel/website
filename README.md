@@ -1,2 +1,1 @@
-# website
-Ryntel's website
+# Ryntel's website
