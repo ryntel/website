@@ -1,29 +1,53 @@
 <!DOCTYPE html>
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="main.css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
         <title>Ryntel</title>
     </head>
 
+
     <body>
-	    <h1>Welcome to Ryntel's awesome website !</h1>
-        <p>
-            <img src="logo.png" style="max-width:100%;height:auto;">
-        </p>
-    </body>
-        <footer>
-		<p id="About"><strong>About</strong> </br> 
-			<a href="mailto:contact@ryntel.com">Contact us </a><br>
-			<a href="about_us.html">About us</a></br>
-			
-		</p> 
- 		<p id="About_social"><strong>Social</strong> </br></p>
-		<p id="About_social_images"><a href="https://www.youtube.com/channel/UC4SM7uiW7ZM9vMTcE9LVbVQ?view_as=subscriber"><img src="youtube_social.jpg" style="max-width:100%;height:auto;"></a>
-		</p>
-	</footer>
+            <header>
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Ryntel</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Acceuil<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Question/Réponses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Nous contacter</a>
+            </li>
+          </ul>
+          <form class="form-inline mt-2 mt-md-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Recherche</button>
+          </form>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Begin page content -->
+    <main role="main" class="container">
+      <h1 class="mt-5">Un truc random</h1>
+      <p class="lead">Un autre truc random</p>
+      <p>Et encore un autre truc random</p>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <span class="text-muted">Ryntel Corp © Contact us : <a href="mailto:contact@ryntel.com">here</a></span>
+      </div>
+    </footer>
+
 </html>
