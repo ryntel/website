@@ -1,5 +1,6 @@
 // oui c'est une fonction de merde, j'avais la flemme voilà :)
 function toggleDarkLight() {
+	document.getElementById('btn_jour').innerHTML = '';
     var body = document.getElementById("body");
     var currentClass = body.className;
     body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
