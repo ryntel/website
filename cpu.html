@@ -1,0 +1,146 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <title>Ryntel</title>
+    <link rel="icon" type="image/png" href="logo.png" />
+    <!-- Bootstrap core CSS -->
+    <script src="script.js"></script>
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/docs/4.0/examples/sticky-footer-navbar/sticky-footer-navbar.css" rel="stylesheet">
+  </head>
+     <body id="body" class="dark-mode">
+    <header>
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <img src="logo.png" style="width:30px;"></img>
+        <a class="navbar-brand" href="index.html">Ryntel</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Question / Answer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Discord bot</a>
+            </li>
+          </ul>
+          
+          <form class="form-inline mt-2 mt-md-0">
+              <button type="button" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode">🌛</button>
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Begin page content -->
+    <main role="main" class="container">
+      <div class="row align-items-center">
+        <div class="col">
+          <h1><center>Discover our new CPU!</center></h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="processeur"></div>
+        </div>
+        <div class="col">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <div class="row">
+                    <div class="col">
+                    # of Cores </div><div class="col"><p class="text-right">32</p></div>
+                  </div>
+                </li>
+
+                <li class="list-group-item">
+                  <div class="row">
+                      <div class="col">
+                      # of Threads  </div><div class="col"><p class="text-right">128</p></div>
+                    </div>
+                </li>
+
+                <li class="list-group-item">
+                  <div class="row">
+                      <div class="col">
+                      Processor Base Frequency </div><div class="col"><p class="text-right">9.5 GHz</p></div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="row">
+                   <div class="col">     
+                    Max Turbo Frquency </div><div class="col"><p class="text-right">10 GHz</p></div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col">
+                        TDP </div><div class="col"><p class="text-right">290 W</p></div>
+                    </div>
+                </li>
+                        
+                <li class="list-group-item">
+                  <div class="row">
+                        <div class="col">
+                            Lithography</div><div class="col"><p class="text-right">3 nm</p></div>
+                        </div>
+                </li>
+
+              </ul>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+          <div class="col-4">
+            <div class="list-group" id="list-tab" role="tablist">
+              <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Performance</a>
+              <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Compatibility</a>
+              <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Consumption</a>
+              <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Other technical details</a>
+            </div>
+          </div>
+          <div class="col-8">
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">Discover our brand new processor, the Ryntel Reaperlake 17. It is the most powerful processor ever invented.</div>
+              <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...</div>
+              <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
+              <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
+            </div>
+          </div>
+        </div>
+    </main>
+  
+  
+  
+    <footer class="footer">
+      <div class="container">
+       <span class="text-muted"> Ryntel Corp © 2019 | <a href="mailto:contact@ryntel.com">Contact us</a></span>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/popper.min.js"></script>
+    <script src="https://getbootstrap.com/docs/4.0/dist/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
