@@ -34,21 +34,25 @@
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Question / Answer</a>
+              <a class="nav-link disabled" href="#">Question / Answer</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Discord bot</a>
+              <a class="nav-link disabled" href="#">Discord bot</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cpu.html">CPU</a>
             </li>
           </ul>
           
           <form class="form-inline mt-2 mt-md-0">
-            <button type="button" class="btn btn-dark" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode">☀ Day mode</button>
+            <button id="btn_jour" type="button" class="btn btn-dark mr-sm-2" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode">☀ Day mode</button>
             <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
           </form>
         </div>
       </nav>
     </header>
+
 
     <!-- Begin page content -->
     <main role="main" class="container">
