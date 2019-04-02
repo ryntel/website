@@ -1,3 +1,4 @@
+// oui c'est une fonction de merde, j'avais la flemme voilà :)
 function toggleDarkLight() {
     var body = document.getElementById("body");
     var currentClass = body.className;
@@ -21,6 +22,12 @@ function toggleDarkLight() {
 	document.getElementById("carte_pumba").classList.add('bg-dark');
 	document.getElementById("carte_thermal").classList.add('text-white');
 	document.getElementById("carte_thermal").classList.add('bg-dark');
+	document.getElementById("carte_unknown").classList.add('text-white');
+	document.getElementById("carte_unknown").classList.add('bg-dark');
+	document.getElementById("carte_loutre").classList.add('text-white');
+	document.getElementById("carte_loutre").classList.add('bg-dark');
+	document.getElementById("carte_schtroumph").classList.add('text-white');
+	document.getElementById("carte_schtroumph").classList.add('bg-dark');
 	} else {
 	document.getElementById("a_changer").classList.remove('text-white');
 	document.getElementById("a_changer").classList.remove('bg-dark');
@@ -40,5 +47,11 @@ function toggleDarkLight() {
 	document.getElementById("carte_pumba").classList.remove('bg-dark');
 	document.getElementById("carte_thermal").classList.remove('text-white');
 	document.getElementById("carte_thermal").classList.remove('bg-dark');
+	document.getElementById("carte_unknown").classList.remove('text-white');
+	document.getElementById("carte_unknown").classList.remove('bg-dark');
+	document.getElementById("carte_loutre").classList.remove('text-white');
+	document.getElementById("carte_loutre").classList.remove('bg-dark');
+	document.getElementById("carte_schtroumph").classList.remove('text-white');
+	document.getElementById("carte_schtroumph").classList.remove('bg-dark');
   }
 }
