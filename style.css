@@ -5,10 +5,15 @@
 .message-box{
         font-family: "Google Sans", Arial, serif;
 }
-body.light-mode
-{
+body.light-mode {
         background-color: white;
 }
-body.dark-mode{
+body.light-mode .teamp {
+        color: #333;
+}
+body.dark-mode .teamp {
+        color: white;
+}
+body.dark-mode {
         background-color: #333;
 }
