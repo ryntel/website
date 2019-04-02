@@ -30,7 +30,7 @@ function toggleDarkLight() {
 	document.getElementById("carte_schtroumph").classList.add('bg-dark');
 	document.getElementById("footer").classList.add('text-white');
 	document.getElementById("footer").classList.add('bg-dark');
-	document.getElementById('btn_jour').innerHTML = '☀ Mode jour';
+	document.getElementById('btn_jour').innerHTML = '☀ Day mode';
 
 	} else {
 	document.getElementById("a_changer").classList.remove('text-white');
@@ -59,6 +59,6 @@ function toggleDarkLight() {
 	document.getElementById("carte_schtroumph").classList.remove('bg-dark');
 	document.getElementById("footer").classList.remove('text-white');
 	document.getElementById("footer").classList.remove('bg-dark');
-	document.getElementById('btn_jour').innerHTML = '🌙 Mode nuit';
+	document.getElementById('btn_jour').innerHTML = '🌙 Night mode';
   }
 }
