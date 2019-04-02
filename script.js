@@ -59,6 +59,6 @@ function toggleDarkLight() {
 	document.getElementById("carte_schtroumph").classList.remove('bg-dark');
 	document.getElementById("footer").classList.remove('text-white');
 	document.getElementById("footer").classList.remove('bg-dark');
-	document.getElementById('text').innerHTML = 'Mode nuit';
+	document.getElementById('btn_jour').innerHTML = 'Mode nuit';
   }
 }
