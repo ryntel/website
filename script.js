@@ -5,19 +5,7 @@ function toggleDarkLight() {
     body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
 	console.log("DEBUG --- Classe actuelle = "  + currentClass);
 	if(currentClass == 'light-mode'){	
-	try {
-		document.getElementById("a_changer").classList.add('text-white');
-	}
-	catch(err) {
-	}
-		
-	try {
-		document.getElementById("a_changer").classList.add('bg-dark');
-	}
-	catch(err) {
-	}
-		/*
-	document.getElementById("carte_hisa").classList.add('text-white');
+		document.getElementById("carte_hisa").classList.add('text-white');
 	document.getElementById("carte_hisa").classList.add('bg-dark');
 	document.getElementById("carte_captain").classList.add('text-white');
 	document.getElementById("carte_captain").classList.add('bg-dark');
@@ -40,22 +28,10 @@ function toggleDarkLight() {
 	document.getElementById("carte_schtroumph").classList.add('text-white');
 	document.getElementById("carte_schtroumph").classList.add('bg-dark');
 	document.getElementById("footer").classList.add('text-white');
-	document.getElementById("footer").classList.add('bg-dark');*/
+	document.getElementById("footer").classList.add('bg-dark');
 	document.getElementById('btn_jour').innerHTML = '☀ Day mode';
 
 	} else {
-			try {
-		document.getElementById("a_changer").classList.add('text-white');
-	}
-	catch(err) {
-	}
-		
-	try {
-		document.getElementById("a_changer").classList.add('bg-dark');
-	}
-	catch(err) {
-	}
-		/*
 	document.getElementById("a_changer").classList.remove('text-white');
 	document.getElementById("a_changer").classList.remove('bg-dark');
 	document.getElementById("carte_hisa").classList.remove('text-white');
@@ -81,7 +57,7 @@ function toggleDarkLight() {
 	document.getElementById("carte_schtroumph").classList.remove('text-white');
 	document.getElementById("carte_schtroumph").classList.remove('bg-dark');
 	document.getElementById("footer").classList.remove('text-white');
-	document.getElementById("footer").classList.remove('bg-dark');*/
+	document.getElementById("footer").classList.remove('bg-dark');
 	document.getElementById('btn_jour').innerHTML = '🌙 Night mode';
   }
 }
