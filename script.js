@@ -4,8 +4,12 @@ function toggleDarkLight() {
     var currentClass = body.className;
     body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
 	console.log("DEBUG --- Classe actuelle = "  + currentClass);
-	if(currentClass == 'light-mode'){	
-		document.getElementById("carte_hisa").classList.add('text-white');
+	if(currentClass == 'light-mode'){
+		
+	document.getElementById("a_changer").classList.add('text-white');
+	document.getElementById("a_changer").classList.add('bg-dark');
+		
+	document.getElementById("carte_hisa").classList.add('text-white');
 	document.getElementById("carte_hisa").classList.add('bg-dark');
 	document.getElementById("carte_captain").classList.add('text-white');
 	document.getElementById("carte_captain").classList.add('bg-dark');
