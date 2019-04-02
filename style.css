@@ -17,3 +17,10 @@ body.dark-mode .teamp {
 body.dark-mode {
         background-color: #111;
 }
+.processeur {
+        height : 351px;
+        width: 408px;
+        background-image: url("https://i.imgur.com/AyW0ocq.png%60%60%60");
+        background-repeat: no-repeat;
+        background-position: cover;
+}
