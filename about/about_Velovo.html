@@ -12,18 +12,18 @@
         <title>Ryntel</title>
     <link rel="icon" type="image/png" href="logo.png" />
     <!-- Bootstrap core CSS -->
+    <script src="script.js"></script>
     <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="style.css" />
     <!-- Custom styles for this template -->
     <link href="https://getbootstrap.com/docs/4.0/examples/sticky-footer-navbar/sticky-footer-navbar.css" rel="stylesheet">
   </head>
-
-  <body>
+     <body id="body" class="dark-mode">
     <header>
       <!-- Fixed navbar -->
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <img src="../logo.png" style="width:30px;"></img>
-        <a class="navbar-brand" href="../index.html">Ryntel</a>
+        <img src="logo.png" style="width:30px;"></img>
+        <a class="navbar-brand" href="index.html">Ryntel</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -33,31 +33,27 @@
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Question / Answer</a>
+              <a class="nav-link disabled" href="#">Question / Answer</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Discord bot</a>
+              <a class="nav-link disabled" href="#">Discord bot</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cpu.html">CPU</a>
             </li>
           </ul>
+          
           <form class="form-inline mt-2 mt-md-0">
+            <button id="btn_jour" type="button" class="btn btn-dark mr-sm-2" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode">☀ Day mode</button>
             <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
           </form>
         </div>
       </nav>
     </header>
-   
 
-
-
-
-
-
-
-
-
-
-
-
-
-   </body>
+  
+  
+  
+  
+  </body>
