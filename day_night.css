@@ -35,7 +35,7 @@
   }
   
   .toggleDark:hover{
-    color: blue;
+    color: lightgray;
   }
   
   .toggleLight{
