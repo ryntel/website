@@ -1,0 +1,46 @@
+{% extends 'layouts/base.html'%}
+{% load static %}
+{% load app_filters %}
+
+{% block content %}
+<main role="main" class="container">
+    <br>
+    <div class="card row text-white bg-dark" id="a_changer">
+        <h5 class="card-header">Featured</h5>
+        <div class="card-body">
+          <h5 class="card-title">Ryntel Corp</h5>
+          <p class="card-text">Thanks you for visiting us. You are welcome.</p>
+        </div>
+      </div>
+ <br>        <h1 class="teamp">Team presentation</h1>
+<br>
+{% for user in users %}
+      {% ifequal forloop.counter|modulo:3 1 %}
+      <div class="row">
+      {% endifequal %}
+
+      <div class="card col text-white bg-dark" style="width: 18rem; float: left; " id="carte_hisa">
+        <img class="card-img-top" src="{{user.url}}" alt="Photo" style="height: auto;">
+        <div class="card-body">
+           <h5 class="card-title">{{user.user}}</h5>
+           <p class="card-text">{{user.description}}</p>
+           <a href="#" class="btn btn-primary">Send private message</a>
+         </div>
+       </div>
+       
+      {% if forloop.counter|divisibleby:3 %}
+
+      </div>
+      <br>
+       
+       {% elif forloop.last %}
+        </div>
+        <br>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/YfjjjsxGrlA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </main>
+        
+      {% endif %}
+{% endfor %}
+{% endblock %}
