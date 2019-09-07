@@ -1,0 +1,26 @@
+@font-face {
+        font-family: Google Sans !important;
+        src:url('https://fonts.googleapis.com/css?family=Google+Sans:100,300,400,500,700,900,100i,300i,400i,500i,700i,900i');
+    }
+.message-box{
+        font-family: "Google Sans", Arial, serif;
+}
+body.light-mode {
+        background-color: white;
+}
+body.light-mode .teamp {
+        color: #333;
+}
+body.dark-mode .teamp {
+        color: white;
+}
+body.dark-mode {
+        background-color: #111;
+}
+.processeur {
+        height : 351px;
+        width: 408px;
+        background-image: url("https://i.imgur.com/AyW0ocq.png%60%60%60");
+        background-repeat: no-repeat;
+        background-position: cover;
+}
