@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'm4q^3xvoi+y4@5zhx1e9rg@8ag^0kpm&*8*%wx-5@2%t+av_my'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -79,11 +79,19 @@ WSGI_APPLICATION = 'ryntel.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'jenky',
+        'USER': 'hisakiyo',
+        'PASSWORD': '123',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
-
+LOGIN_REDIRECT_URL = '/dashboard/'
+LOGIN_URL = '/'
+TEMPLATE_DIRS = (
+    BASE_DIR + '/templates/',
+)
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
